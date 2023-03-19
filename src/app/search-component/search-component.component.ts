@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { IShows } from '../ishows';
 @Component({
   selector: 'app-search-component',
@@ -8,6 +9,7 @@ import { IShows } from '../ishows';
 export class SearchComponentComponent implements OnInit   {
 
 search: IShows
+faSearchIcon: IconProp | undefined;
 constructor() {
   this.search = {
     movies: 'all categories',
