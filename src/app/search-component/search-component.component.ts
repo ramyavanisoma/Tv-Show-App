@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { Icon } from '@fortawesome/fontawesome-svg-core';
 import { IShows } from '../ishows';
+
 @Component({
   selector: 'app-search-component',
   templateUrl: './search-component.component.html',
@@ -8,12 +9,16 @@ import { IShows } from '../ishows';
 })
 export class SearchComponentComponent implements OnInit   {
 
+
 search: IShows
-faSearchIcon: IconProp | undefined;
+  faSearchIcon!: Icon;
+
+
+
 constructor() {
   this.search = {
     movies: 'all categories',
-    documentaries: 'hitory',
+    documentaries: 'history',
     news: 'local and international',
     talkshow: 'family',
     sport: 'all categories',
