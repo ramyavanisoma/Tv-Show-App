@@ -1,14 +1,17 @@
-<div>
+<div *ngIf='show.name===""'>No data available</div>
+<div *ngIf="show.name!==''">
     <div>
-        <span>{{show.name}}</span>
-            <br /> 
-            <span>{{show.language}}</span>
+        <div>
+            <span>{{show.name}}</span>
+                <br /> 
+                <span>{{show.language}}</span>
+        </div>
     </div>
-</div>
-<div>
-    <img [src]= "show.image" />
-    <span>{{show.genres}}</span>
-</div>
-<div>
-    {{show.summary}}
+    <div>
+        <img [src]= "show.image" />
+        <span>{{show.genres}}</span>
+    </div>
+    <div>
+        {{show.summary}}
+    </div>
 </div>

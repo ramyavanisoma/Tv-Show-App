@@ -20,7 +20,7 @@ export class StrangerThingsComponent implements OnInit{
       rating:0,
       officialSite:''
     }
-    this.ShowsService.getTvShow('girls').subscribe(data=>this.show=data);
+    this.ShowsService.getTvShow('kjdfhkd').subscribe(data=>this.show=data);
   }
   ngOnInit() {}
 }
