@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Icon } from '@fortawesome/fontawesome-svg-core';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { IShows } from '../ishows';
 
 @Component({
@@ -11,7 +11,7 @@ export class SearchComponentComponent implements OnInit   {
 
 
 search: IShows
-  faSearchIcon!: Icon;
+  faSearchIcon= faMagnifyingGlass;
 
 
 
@@ -28,6 +28,6 @@ constructor() {
   }
 }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
   }
 }
