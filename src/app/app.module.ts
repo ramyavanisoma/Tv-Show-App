@@ -4,15 +4,17 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SearchComponentComponent } from './search-component/search-component.component';
-
+import { StrangerThingsComponent } from './stranger-things/stranger-things.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponentComponent
+    SearchComponentComponent,
+    StrangerThingsComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

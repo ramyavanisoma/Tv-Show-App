@@ -1,4 +1,4 @@
-export interface ICurrentShow {
+export interface ICurrentShowData {
   // name
   name: string,
   // language
@@ -10,5 +10,11 @@ export interface ICurrentShow {
     medium: string,
   }
   // summary
-  summary: string
+  summary: string,
+  // rating
+  rating:{
+    average:number
+  },
+  //official site
+  officialSite:string
 }

@@ -4,4 +4,6 @@ export interface ICurrentShow {
     genres: string
     image: string
     summary: string
+    rating:number
+    officialSite:string
 }
