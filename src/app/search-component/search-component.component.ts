@@ -11,13 +11,16 @@ export class SearchComponentComponent implements OnInit   {
 @Output() searchEvent=new EventEmitter<string>();
 search=new FormControl('');
 faSearchIcon= faMagnifyingGlass;
-
 constructor() {}
-
   ngOnInit(): void {
-    this.search.valueChanges
-    .subscribe(searchValue=>{
-      
-    })
   }
+
+  submitSearch()
+  {
+    var input = this.search;
+    if (input.value != null){
+      this.searchEvent.emit(input.value);
+    } 
+  }
+
 }

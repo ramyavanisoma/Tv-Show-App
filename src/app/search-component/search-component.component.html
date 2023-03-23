@@ -1,20 +1,22 @@
-<form>
-    <div id="searchComponent">
-
-        <div class="inputAndButton row">
-    
-            <div id="inputDiv" class="col-xs-10 col-md-10 col-lg-10">
-                <input id="searchInputField" type="search" placeholder="Enter show name..." [formControl]="search"/>
+<form class="mytemp">
+    <mat-form-field id="searchComponent" appearence = "outline">
+        <mat-grid-list cols="2" rowHeight="100px">
+            <mat-grid-tile
+                [colspan]="1"
+                [rowspan]="1" class="inputclasstile">
+                <div id="inputDiv">
+                    <input matInput id="searchInputField" type="search" placeholder="Enter show name..." [formControl]="search"/>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile
+            [colspan]="1"
+            [rowspan]="1" class ="buttonclasstile">
+            <div id="buttonDiv" >
+                <button id="searchButton" (click) ="submitSearch()"><fa-icon id="searchIcon" [icon]="faSearchIcon" ></fa-icon></button>
             </div>
-    
-            <div id="buttonDiv" class="col-xs-2 col-md-2 col-lg-2">
-                <button id="searchButton"><fa-icon id="searchIcon" [icon]="faSearchIcon"></fa-icon></button>
-            </div>
-    
-            
-        </div> 
-    
-    </div>
+        </mat-grid-tile>
+          </mat-grid-list>
+    </mat-form-field>
 </form>
 
           

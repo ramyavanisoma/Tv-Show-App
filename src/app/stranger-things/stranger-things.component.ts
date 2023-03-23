@@ -8,9 +8,9 @@ import { ShowsService } from '../shows.service';
   styleUrls: ['./stranger-things.component.css']
 })
 export class StrangerThingsComponent{
+  @Input() show: ICurrentShow
   
-  show: ICurrentShow
-  constructor (private ShowsService:ShowsService) {
+  constructor () {
     this.show = {
       name: '',
       language: '',
@@ -20,7 +20,6 @@ export class StrangerThingsComponent{
       rating:0,
       officialSite:''
     }
-    this.ShowsService.getTvShow('girls').subscribe(data=>this.show=data);
   }
   ngOnInit():void {}
 }
