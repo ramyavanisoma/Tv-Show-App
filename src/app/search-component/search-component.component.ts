@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
+import{FormControl}from '@angular/forms';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,10 +8,16 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./search-component.component.css']
 })
 export class SearchComponentComponent implements OnInit   {
-
+@Output() searchEvent=new EventEmitter<string>();
+search=new FormControl('');
 faSearchIcon= faMagnifyingGlass;
 
 constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.search.valueChanges
+    .subscribe(searchValue=>{
+      
+    })
+  }
 }
