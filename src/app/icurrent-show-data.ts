@@ -18,3 +18,4 @@ export interface ICurrentShowData {
   //official site
   officialSite:string
 }
+
