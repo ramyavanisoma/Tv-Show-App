@@ -13,6 +13,7 @@ search=new FormControl('');
 faSearchIcon= faMagnifyingGlass;
 constructor() {}
   ngOnInit(): void {
+    
   }
 
   submitSearch()
