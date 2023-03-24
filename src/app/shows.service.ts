@@ -14,8 +14,7 @@ export class ShowsService {
     return this.httpClient.get<ICurrentShowData>(`https://api.tvmaze.com/singlesearch/shows?q=${showName}`).pipe(map(data=>this.transformToICurrentShow(data)));
   }
   private transformToICurrentShow(data: ICurrentShowData):ICurrentShow{
-    console.log(data);
-    console.log("hari")
+  
     return{
       name:data.name,
       language:data.language,

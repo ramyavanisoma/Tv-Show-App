@@ -1,4 +1,27 @@
+<form class="mytemp">
+    <mat-form-field id="searchComponent" appearence = "outline">
+        <mat-grid-list cols="2" rowHeight="100px">
+            <mat-grid-tile
+                [colspan]="1"
+                [rowspan]="1" class="inputclasstile">
+                <div id="inputDiv">
+                    <input matInput id="searchInputField" type="search" placeholder="Enter show name..." [formControl]="search"/>
+                    <mat-error *ngIf="search.invalid">*Minimum length of search input should be atleast 2 characters.</mat-error>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile
+            [colspan]="1"
+            [rowspan]="1" class ="buttonclasstile">
+            <div id="buttonDiv" >
+                <button id="searchButton" (click) ="submitSearch()"><fa-icon id="searchIcon" [icon]="faSearchIcon" ></fa-icon></button>
+            </div>
+        </mat-grid-tile>
+          </mat-grid-list>
+          
+    </mat-form-field>
+</form>
 
+<<<<<<< HEAD
 <div id="searchComponent">
 
     <div class="inputAndButton row">
@@ -17,6 +40,8 @@
     </div> 
 
 </div>
+=======
+>>>>>>> 79e16871e32d7f29f6b32af05f5371e2b1d0becf
           
         
     

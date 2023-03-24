@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ICurrentShow } from '../icurrent-show';
 import { ShowsService } from '../shows.service';
 
@@ -7,10 +7,10 @@ import { ShowsService } from '../shows.service';
   templateUrl: './stranger-things.component.html',
   styleUrls: ['./stranger-things.component.css']
 })
-export class StrangerThingsComponent implements OnInit{
+export class StrangerThingsComponent{
+  @Input() show: ICurrentShow
   
-  show: ICurrentShow
-  constructor (private ShowsService:ShowsService) {
+  constructor () {
     this.show = {
       name: '',
       language: '',
@@ -20,7 +20,6 @@ export class StrangerThingsComponent implements OnInit{
       rating:0,
       officialSite:''
     }
-    this.ShowsService.getTvShow('kjdfhkd').subscribe(data=>this.show=data);
   }
-  ngOnInit() {}
+  ngOnInit():void {}
 }
