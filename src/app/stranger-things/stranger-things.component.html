@@ -2,22 +2,23 @@
 <div *ngIf="show.name!==''">
     <div>
         <div>
-            <span>{{show.name}}</span>
+            <span><span class="heading">Title:</span>{{show.name}}</span>
                 <br /> 
-                <span>{{show.language}}</span>
+                <span><span class="heading">Language:</span>{{show.language}}</span>
         </div>
     </div>
     <div>
         <img [src]= "show.image" />
-        <span>{{show.genres}}</span>
+        <span>Genre:{{show.genres}}</span>
     </div>
     <div>
-        <span>{{show.summary}}</span>
+        <span>Summary:{{show.summary}}</span>
     </div>
     <div>
-       <span>{{show.rating}}</span> 
+       <span>Rating: {{show.rating}}</span> 
     </div>
     <div>
-       <span>{{show.officialSite}}</span> 
+       <a [href]="show.officialSite">Official Site:{{show.officialSite}}</a> 
+       
     </div>
 </div>
