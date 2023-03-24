@@ -2,11 +2,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-<<<<<<< HEAD
-=======
 
 .mat-mdc-form-field-subscript-wrapper
 {
     display:none  !important;
 }
->>>>>>> 79e16871e32d7f29f6b32af05f5371e2b1d0becf
