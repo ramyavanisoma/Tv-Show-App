@@ -6,6 +6,7 @@
                 [rowspan]="1" class="inputclasstile">
                 <div id="inputDiv">
                     <input matInput id="searchInputField" type="search" placeholder="Enter show name..." [formControl]="search"/>
+                    <mat-error *ngIf="search.invalid">*Minimum length of search input should be atleast 2 characters.</mat-error>
                 </div>
             </mat-grid-tile>
             <mat-grid-tile
@@ -16,6 +17,7 @@
             </div>
         </mat-grid-tile>
           </mat-grid-list>
+          
     </mat-form-field>
 </form>
 
