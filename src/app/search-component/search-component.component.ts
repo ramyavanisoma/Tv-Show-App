@@ -1,8 +1,6 @@
 import { Component,Output,EventEmitter } from '@angular/core';
 import{FormControl,Validators}from '@angular/forms';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import {Validators,FormControl} from '@angular/forms'
-
 @Component({
   selector: 'app-search-component',
   templateUrl: './search-component.component.html',
