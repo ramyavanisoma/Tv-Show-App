@@ -1,13 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { ICurrentShow } from '../icurrent-show';
-import { ShowsService } from '../shows.service';
 
 @Component({
-  selector: 'app-stranger-things',
-  templateUrl: './stranger-things.component.html',
-  styleUrls: ['./stranger-things.component.css']
+  selector: 'app-display',
+  templateUrl: './display.component.html',
+  styleUrls: ['./display.component.css']
 })
-export class StrangerThingsComponent{
+export class DisplayComponent{
   @Input() show: ICurrentShow
   
   constructor () {
@@ -16,10 +15,10 @@ export class StrangerThingsComponent{
       language: '',
       genres: '', 
       image: '',
-      summary: '',
+      summary:'',
       rating:0,
       officialSite:''
     }
   }
-  ngOnInit():void {}
+  
 }

@@ -1,0 +1,37 @@
+<!-- <div *ngIf='show.name===""'>No data available</div> -->
+
+
+
+<div *ngIf="show.name!=='dummyname'" id="display">
+
+    <div class ="title">
+        <span>{{show.name}}</span>&nbsp; <span class="rating">( {{show.rating}}/10 )</span>
+    </div>
+
+    <mat-grid-list cols="2" rowHeight="30px">
+
+        <mat-grid-tile [colspan]="1" [rowspan]="16">
+            <img class = "imgshowclass" [src]= "show.image" />
+        </mat-grid-tile>
+        
+        <mat-grid-tile class ="summary" [colspan]="1" [rowspan]="10" style="font-size:15px">
+            <span>{{show.summary}}</span>
+        </mat-grid-tile>
+
+        <mat-grid-tile class="sitefield" [colspan]="1" [rowspan]="2">
+            <span class ="propnames">Official Site : </span>&nbsp;<a [href]="show.officialSite"  target="_blank" rel="noopener noreferrer">{{show.officialSite}}</a>  
+        </mat-grid-tile>
+
+        <mat-grid-tile class="langfield" [colspan]="1" [rowspan]="1">
+            <span class ="propnames">Languages : </span> &nbsp;<span> {{show.language}}</span>
+        </mat-grid-tile>
+
+        <mat-grid-tile class="genrefield" [colspan]="1" [rowspan]="1">
+            <span class ="propnames">Genres : </span>&nbsp;<span>{{show.genres}}</span>
+        </mat-grid-tile>
+        
+    </mat-grid-list>
+
+</div>
+    
+
