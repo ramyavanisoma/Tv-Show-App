@@ -4,8 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SearchComponentComponent } from './search-component/search-component.component';
-import { StrangerThingsComponent } from './stranger-things/stranger-things.component';
-import { DisplayComponentComponent } from './display-component/display-component.component';
+import { DisplayComponent } from './display/display.component';
 import {MatToolbarModule} from '@angular/material/toolbar' 
 import {MatCardModule} from '@angular/material/card'
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
@@ -18,8 +17,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
   declarations: [
     AppComponent,
     SearchComponentComponent,
-    StrangerThingsComponent,
-    DisplayComponentComponent
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
