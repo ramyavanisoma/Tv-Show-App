@@ -1,7 +1,7 @@
 
 <div *ngIf='show.name===""'>No data available</div>
 <div *ngIf="show.name!==''">
-    <mat-card class="example-card"></mat-card>
+    <mat-card class="example-card">
     <mat-card-header></mat-card-header>
     <mat-card-title> <span><span class="label">Title:</span>{{show.name}}</span>
     </mat-card-title>
@@ -20,6 +20,6 @@
 <div>
     <a [href]="show.officialSite">{{show.officialSite}}</a>
  </div>
-     
-
+</mat-card-content>   
+</mat-card>
    
