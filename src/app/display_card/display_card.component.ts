@@ -1,13 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { ICurrentShow } from '../icurrent-show';
 import { ShowsService } from '../shows.service';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
-  selector: 'app-stranger-things',
-  templateUrl: './stranger-things.component.html',
-  styleUrls: ['./stranger-things.component.css']
+  selector: 'app-display-card',
+  templateUrl: './display_card.component.html',
+  styleUrls: ['./display_card.component.css']
 })
-export class StrangerThingsComponent{
+export class DisplayCardComponent{
   @Input() show: ICurrentShow
   
   constructor () {

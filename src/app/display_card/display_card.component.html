@@ -1,0 +1,25 @@
+
+<div *ngIf='show.name===""'>No data available</div>
+<div *ngIf="show.name!==''">
+    <mat-card class="example-card"></mat-card>
+    <mat-card-header></mat-card-header>
+    <mat-card-title> <span><span class="label">Title:</span>{{show.name}}</span>
+    </mat-card-title>
+    <img mat-card img [src]= "show.image" />
+    <mat-card-content>
+<span><span class="label">Language:</span>{{show.language}}</span>
+<div>
+<span><span class ="label">Genre:</span>{{show.genres}}</span>
+</div>
+<div>
+<span><span class ="label">Summary:</span>{{show.summary}}</span>
+</div>
+<div>
+<span><span class ="label">Rating</span>:{{show.rating}}</span> 
+</div>
+<div>
+    <a [href]="show.officialSite">{{show.officialSite}}</a>
+ </div>
+     
+
+   

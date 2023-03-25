@@ -1,16 +1,7 @@
 body {
     font-family: sans-serif;
-    padding: 20px;
+    padding: 200px;
     background-color: #5db4aa;
-  }
-
-  .Shows {
-    width: 80%;
-    background-color: #4d416d ;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
   }
   
   mat-grid-tile {
