@@ -13,7 +13,7 @@ export class AppComponent {
   show: ICurrentShow
   constructor (private ShowsService:ShowsService) {
     this.show = {
-      name: 'dummyname',
+      name: '',
       language: '',
       genres: '', 
       image: '',
