@@ -3,6 +3,10 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 This application is a Tv Show Webapp, where a user can search for a show name and the app will display the details of the show.
 
+## Demo vedio of our Tv Show application:
+
+https://youtu.be/nl_G8GRE0BM
+
 ## API 
 
 https://www.tvmaze.com/api
@@ -20,6 +24,4 @@ Run `npx ng generate component component-name` to generate a new component. You 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-## Demo vedio of our Tv Show application:
 
-https://youtu.be/nl_G8GRE0BM
